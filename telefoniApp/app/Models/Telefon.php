@@ -16,4 +16,8 @@ class Telefon extends Model
         'Boje',
         'cena'
     ];
+    public function stavka()
+    {
+        return $this->belongsTo(StavkaRacuna::class);
+    }
 }

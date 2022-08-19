@@ -13,5 +13,9 @@ class Racun extends Model
         'adresa',
         
     ];
+    public function stavke()
+    {
+        return $this->hasMany(StavkaRacuna::class);
+    }
 
 }
