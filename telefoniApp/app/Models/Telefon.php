@@ -13,7 +13,7 @@ class Telefon extends Model
         'ekran',
         'baterija',
         'os',
-        'Boje',
+        'boja',
         'cena'
     ];
     public function stavka()

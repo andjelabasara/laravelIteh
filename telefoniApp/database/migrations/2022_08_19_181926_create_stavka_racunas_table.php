@@ -15,6 +15,9 @@ class CreateStavkaRacunasTable extends Migration
     {
         Schema::create('stavka_racunas', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('racun');
+            $table->foreignId('telefon');
+            $table->integer('kolicina');
             $table->timestamps();
         });
     }

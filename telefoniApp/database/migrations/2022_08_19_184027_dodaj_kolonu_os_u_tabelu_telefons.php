@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRacunsTable extends Migration
+class DodajKolonuOsUTabeluTelefons extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateRacunsTable extends Migration
      */
     public function up()
     {
-        Schema::create('racuns', function (Blueprint $table) {
-            $table->id();
-            $table->date('datum');
-            $table->string('adresa');
-            $table->timestamps();
+        Schema::table('telefons', function (Blueprint $table) {
+             $table->string('os');
         });
     }
 
@@ -28,6 +25,8 @@ class CreateRacunsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('racuns');
+        Schema::table('telefons', function (Blueprint $table) {
+            $table->removeColumn('os');
+       });
     }
 }

@@ -12,6 +12,7 @@ class Racun extends Model
         'datum',
         'adresa',
         
+        
     ];
     public function stavke()
     {

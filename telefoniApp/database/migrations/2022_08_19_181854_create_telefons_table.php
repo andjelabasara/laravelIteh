@@ -15,6 +15,13 @@ class CreateTelefonsTable extends Migration
     {
         Schema::create('telefons', function (Blueprint $table) {
             $table->id();
+            $table->string('naziv');
+            $table->string('ekran');
+            $table->string('baterija');
+            // $table->string('os');
+            $table->string('boja');
+            $table->integer('cena');
+
             $table->timestamps();
         });
     }
