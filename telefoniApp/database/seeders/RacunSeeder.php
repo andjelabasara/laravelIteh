@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Racun;
 use Illuminate\Database\Seeder;
 
 class RacunSeeder extends Seeder
@@ -13,6 +14,6 @@ class RacunSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Racun::factory(5)->create();
     }
 }

@@ -10,7 +10,7 @@ class Racun extends Model
     use HasFactory;
     protected $fillable = [
         'datum',
-        'adresa',
+        'adresaLokala',
         
         
     ];

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\StavkaRacuna;
 use Illuminate\Database\Seeder;
 
 class StavkaRacunaSeeder extends Seeder
@@ -13,6 +14,6 @@ class StavkaRacunaSeeder extends Seeder
      */
     public function run()
     {
-        //
+        StavkaRacuna::factory(10)->create();
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Telefon;
 use Illuminate\Database\Seeder;
 
 class TelefonSeeder extends Seeder
@@ -13,6 +14,6 @@ class TelefonSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Telefon::factory(10)->create();
     }
 }
