@@ -14,7 +14,9 @@ class RacunFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'datum' => $this->faker->dateTimeBetween($startDate = '-2 years', $endDate = 'now', $timezone = null) ,
+            'adresa' => $this->faker->address() 
+           
         ];
     }
 }
