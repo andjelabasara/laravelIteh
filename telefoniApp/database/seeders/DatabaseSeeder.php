@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Racun;
+use App\Models\StavkaRacuna;
+use App\Models\Telefon;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -14,6 +17,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        User::truncate();
+        StavkaRacuna::truncate();
+        Racun::truncate();
+        Telefon::truncate();
+        
         User::factory(10)->create();
 
         $ts = new TelefonSeeder();
